@@ -3,6 +3,7 @@ import colorama
 from colorama import Fore, Back, Style
 colorama.init(autoreset=True)
 import time
+import os
 
 print(f"{Fore.RED}\t\t\t\t\tHoşgeldiniz")
 print(f"{Fore.LIGHTYELLOW_EX}Oyunun amacı rastgele ekrana gelen harften iki önceki harfle aynı olup olmadığının hatırlanmasıdır. Bol şans")
@@ -40,6 +41,6 @@ for i in range(len(liste_harf)):
     else:
         print("Yanlis Cevap")
     time.sleep(0.7)
-
+    os.system("clear")
 print(f"\nPuanınız : {score}")
 
